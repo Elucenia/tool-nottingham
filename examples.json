@@ -1,0 +1,59 @@
+[
+  {
+    "label": "Túbulos &gt; 75%, núcleos uniformes, mitoses baixas: 3 pontos, grau 1",
+    "input": {
+      "tubulos": "1",
+      "nucleo": "1",
+      "mitoses": "1"
+    },
+    "expected": {
+      "score": 3,
+      "level": "low",
+      "verdict": "Grau 1"
+    },
+    "originalInput": {
+      "tubulos": "1",
+      "nucleo": "1",
+      "mitoses": "1"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Corte: 3 + 2 + 1 = 6, grau 2",
+    "input": {
+      "tubulos": "3",
+      "nucleo": "2",
+      "mitoses": "1"
+    },
+    "expected": {
+      "score": 6,
+      "level": "mid",
+      "verdict": "Grau 2"
+    },
+    "originalInput": {
+      "tubulos": "3",
+      "nucleo": "2",
+      "mitoses": "1"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Corte: 3 + 3 + 2 = 8, grau 3",
+    "input": {
+      "tubulos": "3",
+      "nucleo": "3",
+      "mitoses": "2"
+    },
+    "expected": {
+      "score": 8,
+      "level": "high",
+      "verdict": "Grau 3"
+    },
+    "originalInput": {
+      "tubulos": "3",
+      "nucleo": "3",
+      "mitoses": "2"
+    },
+    "expandedZeroOptions": []
+  }
+]

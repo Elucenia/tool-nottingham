@@ -1,0 +1,226 @@
+{
+  "tool": {
+    "id": "nottingham",
+    "title": "Grau histológico de Nottingham",
+    "short": "Grau do carcinoma invasivo de mama (Elston-Ellis)",
+    "desc": "Grau histológico de Nottingham (Elston-Ellis) do carcinoma invasivo de mama: túbulos, pleomorfismo nuclear e mitoses, de 3 a 9 pontos.",
+    "lead": "Gradua o carcinoma invasivo de mama em graus 1, 2 ou 3 pela soma de formação de túbulos, pleomorfismo nuclear e contagem de mitoses.",
+    "spec": [
+      "patologia",
+      "mastologia",
+      "oncologia-clinica",
+      "cirurgia-oncologica"
+    ],
+    "tier": 1,
+    "fields": [
+      [
+        "tubulos",
+        "Formação de túbulos/glândulas",
+        "radio",
+        {
+          "opts": {
+            "1": "&gt; 75% do tumor",
+            "2": "10% a 75%",
+            "3": "&lt; 10%"
+          }
+        }
+      ],
+      [
+        "nucleo",
+        "Pleomorfismo nuclear",
+        "radio",
+        {
+          "opts": {
+            "1": "Núcleos pequenos, regulares e uniformes",
+            "2": "Aumento moderado de tamanho e variabilidade",
+            "3": "Variação acentuada"
+          }
+        }
+      ],
+      [
+        "mitoses",
+        "Contagem de mitoses (em 10 campos, ajustada ao diâmetro do campo)",
+        "radio",
+        {
+          "opts": {
+            "1": "Escore 1 (baixa)",
+            "2": "Escore 2 (intermediária)",
+            "3": "Escore 3 (alta)"
+          }
+        }
+      ]
+    ],
+    "score": {
+      "label": "Nottingham",
+      "unit": "de 9",
+      "bands": [
+        [
+          3,
+          "low",
+          "Grau 1 (bem diferenciado)",
+          ""
+        ],
+        [
+          6,
+          "mid",
+          "Grau 2 (moderadamente diferenciado)",
+          ""
+        ],
+        [
+          8,
+          "high",
+          "Grau 3 (pouco diferenciado)",
+          ""
+        ]
+      ]
+    },
+    "formula": "<p>Cada componente vale de 1 a 3 pontos. Soma 3–5 = <strong>grau 1</strong> · 6–7 = <strong>grau 2</strong> · 8–9 = <strong>grau 3</strong>.</p><p>O ponto de corte da contagem de mitoses depende da área do campo de grande aumento do microscópio; use a tabela de conversão da fonte ou do protocolo do serviço.</p>",
+    "table": [
+      [
+        "Soma",
+        "Grau",
+        "Diferenciação"
+      ],
+      [
+        "3–5",
+        "1",
+        "Bem diferenciado"
+      ],
+      [
+        "6–7",
+        "2",
+        "Moderadamente diferenciado"
+      ],
+      [
+        "8–9",
+        "3",
+        "Pouco diferenciado"
+      ]
+    ],
+    "tips": [
+      "Conte as mitoses na periferia do tumor, na área mais ativa, em 10 campos consecutivos de grande aumento; só figuras de mitose inequívocas contam.",
+      "Meça o diâmetro do campo do seu microscópio: sem esse ajuste, a mesma lâmina pode mudar de escore de mitoses entre observadores.",
+      "Fixação tardia reduz as mitoses visíveis e pode rebaixar o grau: registre o tempo de isquemia fria.",
+      "O grau se aplica a carcinomas invasivos (inclusive tipos especiais); não gradue o carcinoma in situ por este sistema."
+    ],
+    "sources": [
+      [
+        "Elston CW, Ellis IO. Pathological prognostic factors in breast cancer. I. The value of histological grade in breast cancer: experience from a large study with long-term follow-up. Histopathology, 1991.",
+        "https://doi.org/10.1111/j.1365-2559.1991.tb00229.x"
+      ]
+    ],
+    "cases": [
+      [
+        "Túbulos &gt; 75%, núcleos uniformes, mitoses baixas: 3 pontos, grau 1",
+        {
+          "tubulos": "1",
+          "nucleo": "1",
+          "mitoses": "1"
+        },
+        {
+          "score": 3,
+          "level": "low",
+          "verdict": "Grau 1"
+        }
+      ],
+      [
+        "Corte: 3 + 2 + 1 = 6, grau 2",
+        {
+          "tubulos": "3",
+          "nucleo": "2",
+          "mitoses": "1"
+        },
+        {
+          "score": 6,
+          "level": "mid",
+          "verdict": "Grau 2"
+        }
+      ],
+      [
+        "Corte: 3 + 3 + 2 = 8, grau 3",
+        {
+          "tubulos": "3",
+          "nucleo": "3",
+          "mitoses": "2"
+        },
+        {
+          "score": 8,
+          "level": "high",
+          "verdict": "Grau 3"
+        }
+      ]
+    ],
+    "batch": "onco-diagnostico",
+    "kind": "Escore",
+    "config": {
+      "unit": "de 9",
+      "label": "Nottingham",
+      "fields": [
+        [
+          "tubulos",
+          "radio",
+          0
+        ],
+        [
+          "nucleo",
+          "radio",
+          0
+        ],
+        [
+          "mitoses",
+          "radio",
+          0
+        ]
+      ],
+      "bands": [
+        [
+          3,
+          "low",
+          "Grau 1 (bem diferenciado)",
+          ""
+        ],
+        [
+          6,
+          "mid",
+          "Grau 2 (moderadamente diferenciado)",
+          ""
+        ],
+        [
+          8,
+          "high",
+          "Grau 3 (pouco diferenciado)",
+          ""
+        ]
+      ]
+    },
+    "areaId": "onco-diagnostico",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/onco-diagnostico.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/onco-diagnostico.php",
+    "sha256": "29e7fd6aab1f8bf937a34267255855c21f804696da2b4817d6197578cdcbe743",
+    "bytes": 78570
+  },
+  "clinicalValidation": "not-performed"
+}
