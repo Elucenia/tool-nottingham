@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-nottingham · Elucenia · https://github.com/Elucenia/tool-nottingham
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"nottingham","title":"Grau histológico de Nottingham","fields":[["tubulos","Formação de túbulos/glândulas","radio",{"opts":{"1":"&gt; 75% do tumor","2":"10% a 75%","3":"&lt; 10%"}}],["nucleo","Pleomorfismo nuclear","radio",{"opts":{"1":"Núcleos pequenos, regulares e uniformes","2":"Aumento moderado de tamanho e variabilidade","3":"Variação acentuada"}}],["mitoses","Contagem de mitoses (em 10 campos, ajustada ao diâmetro do campo)","radio",{"opts":{"1":"Escore 1 (baixa)","2":"Escore 2 (intermediária)","3":"Escore 3 (alta)"}}]],"config":{"unit":"de 9","label":"Nottingham","fields":[["tubulos","radio",0],["nucleo","radio",0],["mitoses","radio",0]],"bands":[[3,"low","Grau 1 (bem diferenciado)",""],[6,"mid","Grau 2 (moderadamente diferenciado)",""],[8,"high","Grau 3 (pouco diferenciado)",""]]},"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
