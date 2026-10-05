@@ -5,13 +5,13 @@
     "short": "Grau do carcinoma invasivo de mama (Elston-Ellis)",
     "desc": "Grau histológico de Nottingham (Elston-Ellis) do carcinoma invasivo de mama: túbulos, pleomorfismo nuclear e mitoses, de 3 a 9 pontos.",
     "lead": "Gradua o carcinoma invasivo de mama em graus 1, 2 ou 3 pela soma de formação de túbulos, pleomorfismo nuclear e contagem de mitoses.",
+    "kind": "Escore",
     "spec": [
       "patologia",
       "mastologia",
       "oncologia-clinica",
       "cirurgia-oncologica"
     ],
-    "tier": 1,
     "fields": [
       [
         "tubulos",
@@ -50,59 +50,7 @@
         }
       ]
     ],
-    "score": {
-      "label": "Nottingham",
-      "unit": "de 9",
-      "bands": [
-        [
-          3,
-          "low",
-          "Grau 1 (bem diferenciado)",
-          ""
-        ],
-        [
-          6,
-          "mid",
-          "Grau 2 (moderadamente diferenciado)",
-          ""
-        ],
-        [
-          8,
-          "high",
-          "Grau 3 (pouco diferenciado)",
-          ""
-        ]
-      ]
-    },
     "formula": "<p>Cada componente vale de 1 a 3 pontos. Soma 3–5 = <strong>grau 1</strong> · 6–7 = <strong>grau 2</strong> · 8–9 = <strong>grau 3</strong>.</p><p>O ponto de corte da contagem de mitoses depende da área do campo de grande aumento do microscópio; use a tabela de conversão da fonte ou do protocolo do serviço.</p>",
-    "table": [
-      [
-        "Soma",
-        "Grau",
-        "Diferenciação"
-      ],
-      [
-        "3–5",
-        "1",
-        "Bem diferenciado"
-      ],
-      [
-        "6–7",
-        "2",
-        "Moderadamente diferenciado"
-      ],
-      [
-        "8–9",
-        "3",
-        "Pouco diferenciado"
-      ]
-    ],
-    "tips": [
-      "Conte as mitoses na periferia do tumor, na área mais ativa, em 10 campos consecutivos de grande aumento; só figuras de mitose inequívocas contam.",
-      "Meça o diâmetro do campo do seu microscópio: sem esse ajuste, a mesma lâmina pode mudar de escore de mitoses entre observadores.",
-      "Fixação tardia reduz as mitoses visíveis e pode rebaixar o grau: registre o tempo de isquemia fria.",
-      "O grau se aplica a carcinomas invasivos (inclusive tipos especiais); não gradue o carcinoma in situ por este sistema."
-    ],
     "sources": [
       [
         "Elston CW, Ellis IO. Pathological prognostic factors in breast cancer. I. The value of histological grade in breast cancer: experience from a large study with long-term follow-up. Histopathology, 1991.",
@@ -150,49 +98,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "de 9",
-      "label": "Nottingham",
-      "fields": [
-        [
-          "tubulos",
-          "radio",
-          0
-        ],
-        [
-          "nucleo",
-          "radio",
-          0
-        ],
-        [
-          "mitoses",
-          "radio",
-          0
-        ]
-      ],
-      "bands": [
-        [
-          3,
-          "low",
-          "Grau 1 (bem diferenciado)",
-          ""
-        ],
-        [
-          6,
-          "mid",
-          "Grau 2 (moderadamente diferenciado)",
-          ""
-        ],
-        [
-          8,
-          "high",
-          "Grau 3 (pouco diferenciado)",
-          ""
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -201,17 +106,428 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-04T19:08:23.453Z",
+      "total": 27,
+      "passed": 27,
+      "sourceRowCount": 27,
+      "uniqueApiInputCount": 27,
+      "sourceContextCount": 27,
+      "embeddedCasesAreSubset": true,
+      "embeddedCaseCount": 4,
+      "caseStorage": {
+        "mode": "complete-downloadable-bank-with-inline-subset",
+        "file": "independent-source-cases.json",
+        "sha256": "92275e33bea336603769e594a6f5e51cd398c0b2d18be775b61f4f46adbcfe4e",
+        "total": 27,
+        "bankRowCount": 27,
+        "uniqueApiInputCount": 27,
+        "sourceContextCount": 27,
+        "expectedEvidence": [
+          {
+            "file": "reports/review-20261003/three-score-independent-expectations-final27.json",
+            "sha256": "1c2108614e5d083041b973237d618eae17a8603944b8608881db822295bd04a8"
+          }
+        ],
+        "obtainedEvidence": {
+          "file": "reports/review-20261003/three-score-source-comparison-final27.json",
+          "sha256": "8db7177dbaec837508880ed9b1a8c855f25afebcb014ff3e5da971ef5f004517"
+        },
+        "packagingRequirement": "After source27 composition, rebind exact calculator SHA for documented text-only edits and replay the full scope before fresh packaging."
+      },
+      "inputIdentity": {
+        "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+        "sourceRows": 27,
+        "uniqueApiInputs": 27,
+        "duplicateRows": 0,
+        "expectationAudit": {
+          "file": "reports/review-20261003/three-score-independent-expectations-final27.json",
+          "sha256": "1c2108614e5d083041b973237d618eae17a8603944b8608881db822295bd04a8"
+        }
+      },
+      "scope": "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings.",
+      "sources": [
+        {
+          "id": "nottingham",
+          "declaredEdition": "Nottingham/Elston Ellis 1991:3 componentes 1–3, total 3–9; mitosesporáreadecampo",
+          "readRecords": [
+            {
+              "id": "nottingham",
+              "edition": "ICCR Invasive Breast Histopathology Reporting Guide v2.1 June2022, Note8 pp14–15; Elston/Ellis1991 original identity only",
+              "url": "https://www.iccr-cancer.org/wp-content/uploads/2024/03/ICCR-Invasive-breast-2nd-ed-2.1-bookmark.pdf",
+              "file": "nottingham-iccr-2.1-final27.pdf",
+              "readPages": [
+                14,
+                15
+              ],
+              "observations": "Tubule formation, nuclear pleomorphism and mitotic component each receive1–3. Their sum3–9 maps to grade1 at3–5,grade2 at6–7 andgrade3 at8–9. Mitotic scoring depends on microscope field area. This bank tests assigned component sums, not histological image assessment.",
+              "unchecked": [
+                "Original1991 full article not obtained in this reading.",
+                "Mitotic field-area conversion, tissue assessment and prognosis not validated.",
+                "CAP PDF retrieval failed and has not been represented as a successful reading."
+              ],
+              "sha256": "62a6ddf5bd72621a200944eee3d01efbdc27e891911fcbdc5752875ca8a2928a",
+              "visualEvidence": [
+                {
+                  "file": "nottingham-iccr-2.1-final27-p14.png",
+                  "sha256": "564253f6231a7edf3ad4eb6d2de0c2cf09976acb5b7a0442d2368de5144b1fbd"
+                },
+                {
+                  "file": "nottingham-iccr-2.1-final27-p15.png",
+                  "sha256": "ccce9a260adb77b7da14a1b3ddaa26d1aabd776788a78e166cef10822c5c7564"
+                }
+              ],
+              "clinicalApproval": "not-performed",
+              "professionalLanguageApproval": "not-performed",
+              "sourceRightsApproval": "not-performed"
+            }
+          ],
+          "sourceReview": {
+            "file": "reports/review-20261003/three-score-primary-review-final27.json",
+            "sha256": "21364c8a477ff72e3a51bf662879a238fd28d90d2f24115065f9cf5224951068"
+          },
+          "sourceComponent": "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings."
+        }
+      ],
+      "evidencePath": "reports/review-20261003/three-score-source-comparison-final27.json",
+      "evidenceSha256": "8db7177dbaec837508880ed9b1a8c855f25afebcb014ff3e5da971ef5f004517",
+      "independentPeer": {
+        "status": "passed",
+        "scope": "Independent reading of named source sections and own expectation derivation/execution. Bank/metadata packaging needs a separate technical peer. No human clinical, translation or rights approval.",
+        "peer": {
+          "file": "reports/review-20261003/three-score-source-independent-review-western-final27-r2.json",
+          "sha256": "b4f511b270e60afd7d8375a5480403bad36d2e7c7043254505e6bef99c2f2809"
+        },
+        "peerScope": "Independent source-section peer and own assigned-point integer expectations, frozen before imports; three current adapters Node and same-source browser-compatible VM. This is a bounded sum check and does not approve the whole clinical instrument, rubric, population expansion, diagnosis, discharge, rights or professional translation.",
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "metadataPackagingPeer": {
+        "status": "passed",
+        "scope": "Bounded independent review of the original source bank and its metadata/helper. Prospective code rebinding is separately re-executed below and requires the final composition peer; no human approval inferred.",
+        "peer": {
+          "file": "reports/review-20261003/nine-source-bank-metadata-independent-review-western-final27.json",
+          "sha256": "e762e0f425c9251081547c86e4f1b80b86839a21223fd47712ebde9b1335a978"
+        },
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed"
+      },
+      "actualAdapterExecutions": 81,
+      "actualVmExecutions": 81,
+      "implementations": [
+        {
+          "file": "apps/website/private/tool-code/nottingham/calculator.js",
+          "sha256": "be58698417cc2337ee2b0a4c1bf1256a649bffec6af7be5b8384dfc1b4589346"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/nottingham/calculator.js",
+          "sha256": "be58698417cc2337ee2b0a4c1bf1256a649bffec6af7be5b8384dfc1b4589346"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/nottingham/calculator.js",
+          "sha256": "be58698417cc2337ee2b0a4c1bf1256a649bffec6af7be5b8384dfc1b4589346"
+        }
+      ],
+      "qualifications": [
+        "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings.",
+        "Original source conflicts, rights conditions, population and clinical limitations remain in the hashed primary review and peer. They are not marked approved.",
+        "Four inline records are a subset of the complete hashed downloadable bank. Every862historicalfixture and method field/formula/version is unchanged by this evidence-only candidate."
+      ],
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed",
+      "sourceRightsApproval": "not-performed",
+      "fullMethodConformance": "not-performed",
+      "prospectiveSource27Bindings": [
+        {
+          "file": "apps/website/private/tool-code/nottingham/calculator.js",
+          "sha256": "be58698417cc2337ee2b0a4c1bf1256a649bffec6af7be5b8384dfc1b4589346"
+        },
+        {
+          "file": "apps/dashboard/private/tool-code/nottingham/calculator.js",
+          "sha256": "be58698417cc2337ee2b0a4c1bf1256a649bffec6af7be5b8384dfc1b4589346"
+        },
+        {
+          "file": "apps/command-center/private/tool-code/nottingham/calculator.js",
+          "sha256": "be58698417cc2337ee2b0a4c1bf1256a649bffec6af7be5b8384dfc1b4589346"
+        }
+      ],
+      "prospectiveSource27Replay": {
+        "file": "reports/review-20261003/source27-complete-bank-current-replay-root-r3.json",
+        "sha256": "44c601f27d3d5051a8d55a581381112b58df36c7c4b6cfd24ce1249b263d6a2b"
+      },
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Nottingham/Elston Ellis 1991:3 componentes 1–3, total 3–9; mitosesporáreadecampo",
+    "implementationVersion": "nottingham@native-2026-10-03+be58698417cc",
+    "currentMethodSource": "https://pubmed.ncbi.nlm.nih.gov/1757079/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Cada componente vale de 1 a 3 pontos. Soma 3–5 = grau 1 · 6–7 = grau 2 · 8–9 = grau 3 . O ponto de corte da contagem de mitoses depende da área do campo de grande aumento do microscópio; use a tabela de conversão da fonte ou do protocolo do serviço.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "tubulos",
+            "label": "Formação de túbulos/glândulas",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "1": "&gt; 75% do tumor",
+              "2": "10% a 75%",
+              "3": "&lt; 10%"
+            }
+          },
+          {
+            "key": "nucleo",
+            "label": "Pleomorfismo nuclear",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "1": "Núcleos pequenos, regulares e uniformes",
+              "2": "Aumento moderado de tamanho e variabilidade",
+              "3": "Variação acentuada"
+            }
+          },
+          {
+            "key": "mitoses",
+            "label": "Contagem de mitoses (em 10 campos, ajustada ao diâmetro do campo)",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "1": "Escore 1 (baixa)",
+              "2": "Escore 2 (intermediária)",
+              "3": "Escore 3 (alta)"
+            }
+          }
+        ],
+        "hash": "0522234100ec7817767f03c8321ab22ef08670f2dad2d70aab389c7200a4e698"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Elston CW, Ellis IO. Pathological prognostic factors in breast cancer. I. The value of histological grade in breast cancer: experience from a large study with long-term follow-up. Histopathology, 1991.",
+          "url": "https://doi.org/10.1111/j.1365-2559.1991.tb00229.x",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Pathological prognostic factors in breast cancer. I. The value of histological grade in breast cancer: experience from a large study with long-term follow-up.",
+            "year": "1991",
+            "firstPublicationDate": "1991-11-01",
+            "doi": "10.1111/j.1365-2559.1991.tb00229.x",
+            "pmid": "1757079",
+            "journal": "Histopathology",
+            "authors": "Elston CW, Ellis IO."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/1757079/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "d7e1d683294e0ca8963ac52ffaec92156bf516ddba37b01fdd517995218ee13e",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-04T19:08:23.453Z",
+        "total": 27,
+        "passed": 27,
+        "sourceRowCount": 27,
+        "uniqueApiInputCount": 27,
+        "sourceContextCount": 27,
+        "embeddedCasesAreSubset": true,
+        "embeddedCaseCount": 4,
+        "caseStorage": {
+          "mode": "complete-downloadable-bank-with-inline-subset",
+          "file": "independent-source-cases.json",
+          "sha256": "92275e33bea336603769e594a6f5e51cd398c0b2d18be775b61f4f46adbcfe4e",
+          "total": 27,
+          "bankRowCount": 27,
+          "uniqueApiInputCount": 27,
+          "sourceContextCount": 27,
+          "expectedEvidence": [
+            {
+              "file": "reports/review-20261003/three-score-independent-expectations-final27.json",
+              "sha256": "1c2108614e5d083041b973237d618eae17a8603944b8608881db822295bd04a8"
+            }
+          ],
+          "obtainedEvidence": {
+            "file": "reports/review-20261003/three-score-source-comparison-final27.json",
+            "sha256": "8db7177dbaec837508880ed9b1a8c855f25afebcb014ff3e5da971ef5f004517"
+          },
+          "packagingRequirement": "After source27 composition, rebind exact calculator SHA for documented text-only edits and replay the full scope before fresh packaging."
+        },
+        "inputIdentity": {
+          "definition": "Distinct JSON input objects within each method after recursively sorting object keys; array order, numeric values and JSON value types preserved. Uses stored input/inputs before implicit default completion, numeric coercion or clinical feature interpretation. Identity across different methods is not collapsed. Repeated scenarios are retained and coverage status is unchanged.",
+          "sourceRows": 27,
+          "uniqueApiInputs": 27,
+          "duplicateRows": 0,
+          "expectationAudit": {
+            "file": "reports/review-20261003/three-score-independent-expectations-final27.json",
+            "sha256": "1c2108614e5d083041b973237d618eae17a8603944b8608881db822295bd04a8"
+          }
+        },
+        "scope": "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings.",
+        "sources": [
+          {
+            "id": "nottingham",
+            "declaredEdition": "Nottingham/Elston Ellis 1991:3 componentes 1–3, total 3–9; mitosesporáreadecampo",
+            "readRecords": [
+              {
+                "id": "nottingham",
+                "edition": "ICCR Invasive Breast Histopathology Reporting Guide v2.1 June2022, Note8 pp14–15; Elston/Ellis1991 original identity only",
+                "url": "https://www.iccr-cancer.org/wp-content/uploads/2024/03/ICCR-Invasive-breast-2nd-ed-2.1-bookmark.pdf",
+                "file": "nottingham-iccr-2.1-final27.pdf",
+                "readPages": [
+                  14,
+                  15
+                ],
+                "observations": "Tubule formation, nuclear pleomorphism and mitotic component each receive1–3. Their sum3–9 maps to grade1 at3–5,grade2 at6–7 andgrade3 at8–9. Mitotic scoring depends on microscope field area. This bank tests assigned component sums, not histological image assessment.",
+                "unchecked": [
+                  "Original1991 full article not obtained in this reading.",
+                  "Mitotic field-area conversion, tissue assessment and prognosis not validated.",
+                  "CAP PDF retrieval failed and has not been represented as a successful reading."
+                ],
+                "sha256": "62a6ddf5bd72621a200944eee3d01efbdc27e891911fcbdc5752875ca8a2928a",
+                "visualEvidence": [
+                  {
+                    "file": "nottingham-iccr-2.1-final27-p14.png",
+                    "sha256": "564253f6231a7edf3ad4eb6d2de0c2cf09976acb5b7a0442d2368de5144b1fbd"
+                  },
+                  {
+                    "file": "nottingham-iccr-2.1-final27-p15.png",
+                    "sha256": "ccce9a260adb77b7da14a1b3ddaa26d1aabd776788a78e166cef10822c5c7564"
+                  }
+                ],
+                "clinicalApproval": "not-performed",
+                "professionalLanguageApproval": "not-performed",
+                "sourceRightsApproval": "not-performed"
+              }
+            ],
+            "sourceReview": {
+              "file": "reports/review-20261003/three-score-primary-review-final27.json",
+              "sha256": "21364c8a477ff72e3a51bf662879a238fd28d90d2f24115065f9cf5224951068"
+            },
+            "sourceComponent": "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings."
+          }
+        ],
+        "evidencePath": "reports/review-20261003/three-score-source-comparison-final27.json",
+        "evidenceSha256": "8db7177dbaec837508880ed9b1a8c855f25afebcb014ff3e5da971ef5f004517",
+        "independentPeer": {
+          "status": "passed",
+          "scope": "Independent reading of named source sections and own expectation derivation/execution. Bank/metadata packaging needs a separate technical peer. No human clinical, translation or rights approval.",
+          "peer": {
+            "file": "reports/review-20261003/three-score-source-independent-review-western-final27-r2.json",
+            "sha256": "b4f511b270e60afd7d8375a5480403bad36d2e7c7043254505e6bef99c2f2809"
+          },
+          "peerScope": "Independent source-section peer and own assigned-point integer expectations, frozen before imports; three current adapters Node and same-source browser-compatible VM. This is a bounded sum check and does not approve the whole clinical instrument, rubric, population expansion, diagnosis, discharge, rights or professional translation.",
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "metadataPackagingPeer": {
+          "status": "passed",
+          "scope": "Bounded independent review of the original source bank and its metadata/helper. Prospective code rebinding is separately re-executed below and requires the final composition peer; no human approval inferred.",
+          "peer": {
+            "file": "reports/review-20261003/nine-source-bank-metadata-independent-review-western-final27.json",
+            "sha256": "e762e0f425c9251081547c86e4f1b80b86839a21223fd47712ebde9b1335a978"
+          },
+          "clinicalApproval": "not-performed",
+          "professionalLanguageApproval": "not-performed",
+          "sourceRightsApproval": "not-performed",
+          "fullMethodConformance": "not-performed"
+        },
+        "actualAdapterExecutions": 81,
+        "actualVmExecutions": 81,
+        "implementations": [
+          {
+            "file": "apps/website/private/tool-code/nottingham/calculator.js",
+            "sha256": "be58698417cc2337ee2b0a4c1bf1256a649bffec6af7be5b8384dfc1b4589346"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/nottingham/calculator.js",
+            "sha256": "be58698417cc2337ee2b0a4c1bf1256a649bffec6af7be5b8384dfc1b4589346"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/nottingham/calculator.js",
+            "sha256": "be58698417cc2337ee2b0a4c1bf1256a649bffec6af7be5b8384dfc1b4589346"
+          }
+        ],
+        "qualifications": [
+          "Exact sum of previously assigned source component points; clinical rubrics, eligibility, observation, probability, diagnosis, classification and treatment are excluded. See named source sections and independent source findings.",
+          "Original source conflicts, rights conditions, population and clinical limitations remain in the hashed primary review and peer. They are not marked approved.",
+          "Four inline records are a subset of the complete hashed downloadable bank. Every862historicalfixture and method field/formula/version is unchanged by this evidence-only candidate."
+        ],
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed",
+        "sourceRightsApproval": "not-performed",
+        "fullMethodConformance": "not-performed",
+        "prospectiveSource27Bindings": [
+          {
+            "file": "apps/website/private/tool-code/nottingham/calculator.js",
+            "sha256": "be58698417cc2337ee2b0a4c1bf1256a649bffec6af7be5b8384dfc1b4589346"
+          },
+          {
+            "file": "apps/dashboard/private/tool-code/nottingham/calculator.js",
+            "sha256": "be58698417cc2337ee2b0a4c1bf1256a649bffec6af7be5b8384dfc1b4589346"
+          },
+          {
+            "file": "apps/command-center/private/tool-code/nottingham/calculator.js",
+            "sha256": "be58698417cc2337ee2b0a4c1bf1256a649bffec6af7be5b8384dfc1b4589346"
+          }
+        ],
+        "prospectiveSource27Replay": {
+          "file": "reports/review-20261003/source27-complete-bank-current-replay-root-r3.json",
+          "sha256": "44c601f27d3d5051a8d55a581381112b58df36c7c4b6cfd24ce1249b263d6a2b"
+        },
+        "publicCandidateBankOmitted": true
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "be58698417cc2337ee2b0a4c1bf1256a649bffec6af7be5b8384dfc1b4589346"
+    },
+    "limits": "Graduação histopatológica de carcinoma mamário por formação tubular, pleomorfismo e mitoses. Os limiares mitóticos dependem da área de campo do microscópio. O grau não é o Nottingham Prognostic Index e não substitui avaliação anatomopatológica ou valida outra histologia.",
+    "sourceLimitEvidence": {
+      "checkedAt": "2026-10-04T02:52:02.998Z",
+      "scope": "Targeted source reading and authorial documentation, not full method or clinical approval.",
+      "sourceReviewFile": "remaining-native-population-limits-review.json",
+      "sourceReviewSha256": "ba61a9b120a338c518c34ba9f324558b12580e7f5371ea81304b030b45ea44a5",
+      "readingOutcome": "review-outcome-recorded",
+      "unresolved": [
+        "Conversões completas de área de campo e limites exatos de mitoses não foram lidos na tabela original."
+      ],
+      "fullMethodConformanceReviewed": false,
+      "clinicalApproval": "not-performed",
+      "professionalLanguageApproval": "not-performed"
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/nottingham/calculator.js",
+    "bytes": 4784,
+    "sha256": "be58698417cc2337ee2b0a4c1bf1256a649bffec6af7be5b8384dfc1b4589346"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "5dc8496e584da02e74fa91e403d1ee5debbe25ac44e5d0f9fd1d9e36a7cae4ec",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 4,
+      "sha256": "978ad22ea34fd1771f1ee5afca50a425c092ee6967dfb1d6bb88a219840944a5",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    },
+    {
+      "rows": 4,
+      "sha256": "978ad22ea34fd1771f1ee5afca50a425c092ee6967dfb1d6bb88a219840944a5",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

@@ -1,0 +1,152 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field tubulos",
+    "input": {
+      "nucleo": "1",
+      "mitoses": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tubulos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field tubulos",
+    "input": {
+      "tubulos": "",
+      "nucleo": "1",
+      "mitoses": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "tubulos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option tubulos",
+    "input": {
+      "tubulos": "__ELUCENIA_INVALID_OPTION__",
+      "nucleo": "1",
+      "mitoses": "1"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "tubulos"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field nucleo",
+    "input": {
+      "tubulos": "1",
+      "mitoses": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "nucleo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field nucleo",
+    "input": {
+      "tubulos": "1",
+      "nucleo": "",
+      "mitoses": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "nucleo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option nucleo",
+    "input": {
+      "tubulos": "1",
+      "nucleo": "__ELUCENIA_INVALID_OPTION__",
+      "mitoses": "1"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "nucleo"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field mitoses",
+    "input": {
+      "tubulos": "1",
+      "nucleo": "1"
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "mitoses"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field mitoses",
+    "input": {
+      "tubulos": "1",
+      "nucleo": "1",
+      "mitoses": ""
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "mitoses"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option mitoses",
+    "input": {
+      "tubulos": "1",
+      "nucleo": "1",
+      "mitoses": "__ELUCENIA_INVALID_OPTION__"
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "mitoses"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]
