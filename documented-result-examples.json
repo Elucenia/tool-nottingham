@@ -1,0 +1,387 @@
+{
+  "id": "nottingham",
+  "implementationVersion": "nottingham@native-2026-10-05+3fa2b74393e9",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Túbulos &gt; 75%, núcleos uniformes, mitoses baixas: 3 pontos, grau 1",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grau 1 (bem diferenciado)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Corte: 3 + 2 + 1 = 6, grau 2",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grau 2 (moderadamente diferenciado)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Corte: 3 + 3 + 2 = 8, grau 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grau 3 (pouco diferenciado)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Túbulos &gt; 75%, núcleos uniformes, mitoses baixas: 3 pontos, grau 1",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grade 1 (well differentiated)",
+            "locale": "en",
+            "template": "documented-authored-549bb03622fbb46393f1"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Corte: 3 + 2 + 1 = 6, grau 2",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grade 2 (moderately differentiated)",
+            "locale": "en",
+            "template": "documented-authored-d2725d76515d21dfef46"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Corte: 3 + 3 + 2 = 8, grau 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grade 3 (poorly differentiated)",
+            "locale": "en",
+            "template": "documented-authored-519d8e0efec4956c673e"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Túbulos &gt; 75%, núcleos uniformes, mitoses baixas: 3 pontos, grau 1",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grado 1 (bien diferenciado)",
+            "locale": "es",
+            "template": "documented-authored-549bb03622fbb46393f1"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Corte: 3 + 2 + 1 = 6, grau 2",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grado 2 (moderadamente diferenciado)",
+            "locale": "es",
+            "template": "documented-authored-d2725d76515d21dfef46"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Corte: 3 + 3 + 2 = 8, grau 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grado 3 (poco diferenciado)",
+            "locale": "es",
+            "template": "documented-authored-519d8e0efec4956c673e"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Túbulos &gt; 75%, núcleos uniformes, mitoses baixas: 3 pontos, grau 1",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grade 1 (bien différencié)",
+            "locale": "fr",
+            "template": "documented-authored-549bb03622fbb46393f1"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Corte: 3 + 2 + 1 = 6, grau 2",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grade 2 (modérément différencié)",
+            "locale": "fr",
+            "template": "documented-authored-d2725d76515d21dfef46"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Corte: 3 + 3 + 2 = 8, grau 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grade 3 (peu différencié)",
+            "locale": "fr",
+            "template": "documented-authored-519d8e0efec4956c673e"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Túbulos &gt; 75%, núcleos uniformes, mitoses baixas: 3 pontos, grau 1",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grad 1 (gut differenziert)",
+            "locale": "de",
+            "template": "documented-authored-549bb03622fbb46393f1"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Corte: 3 + 2 + 1 = 6, grau 2",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grad 2 (mäßig differenziert)",
+            "locale": "de",
+            "template": "documented-authored-d2725d76515d21dfef46"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Corte: 3 + 3 + 2 = 8, grau 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grad 3 (schlecht differenziert)",
+            "locale": "de",
+            "template": "documented-authored-519d8e0efec4956c673e"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Túbulos &gt; 75%, núcleos uniformes, mitoses baixas: 3 pontos, grau 1",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grado 1 (ben differenziato)",
+            "locale": "it",
+            "template": "documented-authored-549bb03622fbb46393f1"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Corte: 3 + 2 + 1 = 6, grau 2",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grado 2 (moderatamente differenziato)",
+            "locale": "it",
+            "template": "documented-authored-d2725d76515d21dfef46"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Corte: 3 + 3 + 2 = 8, grau 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Grado 3 (poco differenziato)",
+            "locale": "it",
+            "template": "documented-authored-519d8e0efec4956c673e"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Túbulos &gt; 75%, núcleos uniformes, mitoses baixas: 3 pontos, grau 1",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "الدرجة 1 (متمايز جيدًا)",
+            "locale": "ar",
+            "template": "documented-authored-549bb03622fbb46393f1"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Corte: 3 + 2 + 1 = 6, grau 2",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "الدرجة 2 (متمايز بدرجة متوسطة)",
+            "locale": "ar",
+            "template": "documented-authored-d2725d76515d21dfef46"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Corte: 3 + 3 + 2 = 8, grau 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "الدرجة 3 (متمايز بشكل ضعيف)",
+            "locale": "ar",
+            "template": "documented-authored-519d8e0efec4956c673e"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Túbulos &gt; 75%, núcleos uniformes, mitoses baixas: 3 pontos, grau 1",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "1级（分化良好）",
+            "locale": "zh",
+            "template": "documented-authored-549bb03622fbb46393f1"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Corte: 3 + 2 + 1 = 6, grau 2",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "2级（中等分化）",
+            "locale": "zh",
+            "template": "documented-authored-d2725d76515d21dfef46"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Corte: 3 + 3 + 2 = 8, grau 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "3级（低分化）",
+            "locale": "zh",
+            "template": "documented-authored-519d8e0efec4956c673e"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Túbulos &gt; 75%, núcleos uniformes, mitoses baixas: 3 pontos, grau 1",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "グレード1（高分化）",
+            "locale": "ja",
+            "template": "documented-authored-549bb03622fbb46393f1"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Corte: 3 + 2 + 1 = 6, grau 2",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "グレード2（中分化）",
+            "locale": "ja",
+            "template": "documented-authored-d2725d76515d21dfef46"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Corte: 3 + 3 + 2 = 8, grau 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "グレード3（低分化）",
+            "locale": "ja",
+            "template": "documented-authored-519d8e0efec4956c673e"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Túbulos &gt; 75%, núcleos uniformes, mitoses baixas: 3 pontos, grau 1",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "ग्रेड 1 (अच्छी तरह विभेदित)",
+            "locale": "hi",
+            "template": "documented-authored-549bb03622fbb46393f1"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Corte: 3 + 2 + 1 = 6, grau 2",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "ग्रेड 2 (मध्यम रूप से विभेदित)",
+            "locale": "hi",
+            "template": "documented-authored-d2725d76515d21dfef46"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Corte: 3 + 3 + 2 = 8, grau 3",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "ग्रेड 3 (अल्प विभेदित)",
+            "locale": "hi",
+            "template": "documented-authored-519d8e0efec4956c673e"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}
